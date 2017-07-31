@@ -93,7 +93,7 @@ tidyDataset <- dataset %>%
    summarise_all(mean)
 
 # Write this tidy dataset in a file
-write.table(tidyDataset, "tidy_dataset.txt")
+write.table(tidyDataset, "tidy_dataset.txt", row.name=FALSE)
 
 # Can be read with :
 # tidyDataset <- read.table("tidy_dataset.txt")
